@@ -5,6 +5,10 @@ downloading and processing the full database is not viable. Code was kept as sim
 using only the xpath of each table and spliting respective urls in a manner that takes pagination 
 into account.
 
+##### Note
+After fetching is finished, some tables may need further proccesing for information to be presentable 
+-I suggest using regex to fix those issues.
+
 Install:
 
 ```R
