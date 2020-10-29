@@ -17,7 +17,7 @@ dbscrape(std_url, pages, postfix = "")
 dataframe
 }
 \description{
-Scrape HTML Tables from Drugbank
+Scrape HTML Tables from DrugBank
 }
 \examples{
 std_url <- "https://go.drugbank.com/pharmaco/metabolomics?page="
