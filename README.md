@@ -1,2 +1,1 @@
-# dbscrape
-Scrape HTML Tables from Drugbank
+# dbscrape: scrape html tables from drugbank
