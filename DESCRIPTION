@@ -1,0 +1,16 @@
+Package: dbscrape
+Type: Package
+Title: Scrape HTML Tables from Drugbank
+Version: 0.1.0
+Author: Panagiotis Togias
+Maintainer: Panagiotis Togias <ptogias@outlook.com>
+Description: Export HTML tables from DrugBank to dataframes. This function can come in handy in cases where downloading and processing the full database is not viable. Code was kept as simple as possible, using only the xpath of each table and spliting respective urls in a manner that takes pagination into account.
+Imports: 
+    dplyr,
+    rvest,
+    xml2,
+    progress,
+    data.table
+License: MIT
+Encoding: 
+LazyData: FALSE
