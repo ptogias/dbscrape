@@ -50,12 +50,12 @@ get_tables <- function(x) {
   pb$tick()
 
   table <- x %>%
-    read_html() %>%
-    html_nodes(xpath = "/html/body/main/div/form/div[2]/table") %>%
-    html_table()
+    xml2::read_html() %>%
+    rvest::html_nodes(xpath = "/html/body/main/div/form/div[2]/table") %>%
+    rvest::html_table()
 
   names(table[[1]]) <- names(tofill)
-  tofill <- bind_rows(tofill, table[[1]])
+  tofill <- dplyr::bind_rows(tofill, table[[1]])
 
 }
 
