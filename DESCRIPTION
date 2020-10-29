@@ -1,6 +1,6 @@
 Package: dbscrape
 Type: Package
-Title: Scrape HTML Tables from Drugbank
+Title: Scrape HTML Tables from DrugBank
 Version: 0.1.0
 Author: Panagiotis Togias
 Maintainer: Panagiotis Togias <ptogias@outlook.com>
