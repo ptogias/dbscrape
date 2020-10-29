@@ -19,11 +19,11 @@ remotes::install_github("ptogias/dbscrape")
 ## Overview
 
 There are three parameters used in dbscrape
-##### 1. std_url 
+#### 1. std_url 
 *Character.* The URL post pagination (stops to 'page=').
-##### 2. pages 
+#### 2. pages 
 *Numeric.* Pagination range (i.e. '1:88'). Must start from 1 and end to the respective query end page (search for this manually).
-##### 3. postfix 
+#### 3. postfix 
 _[Optional]_ *Character.* Applied on-page filters. These are indicated after the "page=" url part. Defaults to an empty char vector. See second example.
 
 ## Examples
