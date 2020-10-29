@@ -16,3 +16,4 @@ Imports:
 License: MIT
 Encoding: 
 LazyData: FALSE
+RoxygenNote: 7.1.1

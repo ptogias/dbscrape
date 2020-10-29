@@ -2,11 +2,13 @@
 #'
 #' @description Scrape HTML Tables from Drugbank
 #'
-#' @param std_url The URL post pagination (stops to 'page=').
-#' @param pages Pagination range (i.e. '1:88'). Must start from 1 and end to the respective query end page (search for this manually).
-#' @param postfix Optional. Applied on-page filters. These are indicated after the "page=" url part. See second example.
+#' @param std_url Character. The URL post pagination (stops to 'page=').
+#' @param pages Numeric. Pagination range (i.e. '1:88'). Must start from 1 and end to the respective query end page (search for this manually).
+#' @param postfix Character. Optional. Applied on-page filters. These are indicated after the "page=" url part. Defaults to an empty char vector. See second example.
 #'
-#' @return results
+#' @importFrom magrittr "%>%"
+#'
+#' @return dataframe
 #'
 #' @examples
 #' std_url <- "https://go.drugbank.com/pharmaco/metabolomics?page="
@@ -21,7 +23,7 @@
 #'
 #' @export
 
-dbscrape <- function(std_url, pages, postfix) {
+dbscrape <- function(std_url, pages, postfix = "") {
 
 urls <- paste0(std_url, pages, postfix)
 
