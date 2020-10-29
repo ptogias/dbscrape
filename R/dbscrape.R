@@ -1,6 +1,6 @@
 #' @title dbscrape
 #'
-#' @description Scrape HTML Tables from Drugbank
+#' @description Scrape HTML Tables from DrugBank
 #'
 #' @param std_url Character. The URL post pagination (stops to 'page=').
 #' @param pages Numeric. Pagination range (i.e. '1:88'). Must start from 1 and end to the respective query end page (search for this manually).
